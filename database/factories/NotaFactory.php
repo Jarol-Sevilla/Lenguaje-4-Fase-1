@@ -19,9 +19,9 @@ class NotaFactory extends Factory
     public function definition(): array
     {
         return [
-            'texto'=>$this->faker->sentence(12),
+            'texto'=>$this->faker->sentence(),
             'fecha'=>$this->faker->dateTime(),
-            'contacto_id'=>$this->faker->numberBetween(1, 400)
+            'contacto_id'=>$this->faker->usignedBigInteger(1, 400)
         ];
     }
 }

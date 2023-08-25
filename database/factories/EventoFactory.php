@@ -23,7 +23,7 @@ class EventoFactory extends Factory
             'descripcion'=>$this->faker->sentence(5,true),
             'fecha_inicio'=>$this->faker->dateTime(),
             'fecha_cierre'=>$this->faker->dateTime(),
-            'contacto_id'=>$this->faker->numberBetween(1, 400)
+            'contacto_id'=>$this->faker->usignedBigInteger(1, 400)
         ];
     }
 }
